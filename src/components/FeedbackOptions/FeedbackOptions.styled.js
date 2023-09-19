@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const stylesConfig = {
+const styleBtn = {
   good: {
     default: {
       background: 'white',
@@ -41,18 +41,18 @@ const stylesConfig = {
 
 export const OptionBtn = styled.button`
   background-color: ${props =>
-    stylesConfig[props.option]?.default.background };
+    styleBtn[props.option]?.default.background };
 
-  color: ${props => stylesConfig[props.option]?.default.color };
+  color: ${props => styleBtn[props.option]?.default.color };
   border: ${props =>
-    stylesConfig[props.option]?.default.border };
+    styleBtn[props.option]?.default.border };
 
   &:hover {
     background-color: ${props =>
-      stylesConfig[props.option]?.hover.background};
-    color: ${props => stylesConfig[props.option]?.hover.color };
+      styleBtn[props.option]?.hover.background};
+    color: ${props => styleBtn[props.option]?.hover.color };
     border: ${props =>
-      stylesConfig[props.option]?.hover.border};
+      styleBtn[props.option]?.hover.border};
   }
 
   margin-right: 20px;
